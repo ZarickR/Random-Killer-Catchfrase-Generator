@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 0%); 
+}
+
+.h1 {
+  text-align: center;
+  color: hsl(0, 100%, 50%);
+}
+
+.Generate {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: hsl(34, 100%, 51%);
+  color: hsl(0, 0%, 0%);
+  padding: 1em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: hsl(34, 94%, 47%);
+}
