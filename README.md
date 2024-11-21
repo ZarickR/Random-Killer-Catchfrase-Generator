@@ -1,1 +1,1 @@
-# Random-Message-Generator
+# Random-Killer-Catchfrase-Generator
