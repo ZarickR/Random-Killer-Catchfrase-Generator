@@ -36,4 +36,5 @@ const locations = ["Elm Street",
                    "Woodsboro, California",
                    "Toy Store"];
 
-//
+// Random catchphrase generator main program.
+
