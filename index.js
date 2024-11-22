@@ -20,17 +20,17 @@ const phrases = ["Welcome to prime time!",
                  "It's your friend till the end!", 
                  "You've been very naughty.", 
                  "This is the end, friend!"];
-const actions = ["Heavy breathing", 
-                 "Footsteps in the woods", 
-                 "Breaking branches", 
-                 "Ki ki ki, ma ma ma", 
-                 "Head tilt", 
-                 "Slow methodical walking", 
-                 "Standing still while observing", 
-                 "Heavy breathing behind mask"];
+ const actions = ["Heavy breathing", 
+                  "Footsteps in the woods", 
+                  "Breaking branches", 
+                  "Ki ki ki, ma ma ma", 
+                  "Head tilt", 
+                  "Slow methodical walking", 
+                  "Standing still while observing", 
+                  "Heavy breathing behind mask"];
 const locations = ["Elm Street", 
                    "Dream World",
-                   "Boiler Room",
+                   "the Boiler Room",
                    "Camp Crystal Lake",
                    "Haddonfield, Illinois",
                    "Woodsboro, California",
@@ -38,3 +38,29 @@ const locations = ["Elm Street",
 
 // Random catchphrase generator main program.
 
+document.getElementById("GenButton").onclick = function(){
+
+    //Killer random selector
+    let killerRandom = Math.floor(Math.random() * killers.length);
+    let killer = killers[killerRandom];
+    let killerSelect = `Your killer is ${killer}.`;    
+    
+    //Phrase or Action random selector
+    let phrase = Math.floor(Math.random() * phrases.length);
+    let action = Math.floor(Math.random() * actions.length);
+
+    if(killer === "Jason Voorhees" || killer === "Michael Myers") {
+        phraseOrActionSelect = `You will happen to ${actions[action]} before finishing off your victim...`;
+    }
+    else {
+        phraseOrActionSelect = `You will say: "${phrases[phrase]}" before you finish off your victim!`;
+    }
+    
+    // Playground random selector
+    let location = Math.floor(Math.random() * locations.length);
+    let locationSelect = `Your playground is ${locations[location]}.`;
+
+    document.getElementById("killer").textContent = killerSelect;
+    document.getElementById("phrase").textContent = phraseOrActionSelect;
+    document.getElementById("location").textContent = locationSelect;
+}
