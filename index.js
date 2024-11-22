@@ -19,22 +19,22 @@ const phrases = ["Welcome to prime time!",
                  "Friends till the end!", 
                  "It's your friend till the end!", 
                  "You've been very naughty.", 
-                 "This is the end, friend!"];
- const actions = ["Heavy breathing", 
-                  "Footsteps in the woods", 
-                  "Breaking branches", 
-                  "Ki ki ki, ma ma ma", 
-                  "Head tilt", 
-                  "Slow methodical walking", 
-                  "Standing still while observing", 
-                  "Heavy breathing behind mask"];
+                 "This is the end, friend!",
+                 "Ki ki ki, ma ma ma"];
+ const actions = ["breathe heavily", 
+                  "make noises of footsteps in the woods", 
+                  "breake some branches",
+                  "head tilt", 
+                  "slowly and methodically walk", 
+                  "stand still while observing", 
+                  "breathe heavily behind the mask"];
 const locations = ["Elm Street", 
-                   "Dream World",
+                   "the Dream World",
                    "the Boiler Room",
                    "Camp Crystal Lake",
                    "Haddonfield, Illinois",
                    "Woodsboro, California",
-                   "Toy Store"];
+                   "a Toy Store"];
 
 // Random catchphrase generator main program.
 
