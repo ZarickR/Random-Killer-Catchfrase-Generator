@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background-color: hsl(0, 0%, 0%); 
+  background-color: hsl(0, 0%, 0%);
 }
 
 .h1 {
@@ -22,4 +22,9 @@ html {
 
 .button:hover {
   background-color: hsl(34, 94%, 47%);
+}
+
+.phrases {
+  color: white;
+  text-align: center;
 }
